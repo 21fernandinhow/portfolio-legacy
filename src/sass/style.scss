@@ -65,6 +65,12 @@ body{
                 .home, .about, .portfolio, .contact{
                     height: 100%;
                 }
+                .home{
+                    text-align: center;
+                    .menu{
+                        justify-content: center;
+                    }
+                }
                 .portfolio-img{
                     max-width: 100%;
                 }
