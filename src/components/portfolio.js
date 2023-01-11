@@ -30,17 +30,15 @@ function Portfolio() {
   }
 
   return (
-    <div data-aos="fade-in" data-aos-duration="2000">
+    <div data-aos="fade-in" data-aos-duration="2000" className="portfolio">
         <h2>Portfolio</h2>
 
         <Item name={projects[project].name} image={projects[project].image} link={projects[project].link}/>
 
         <div className="menu">
-          <span className="btn-menu" onClick={changeProject}>Show another project</span>
-          <Link to="/" className="btn-menu">Back to Home</Link>
-        </div>       
-
-        <br/><br/><br/>
+          <span className="btn" onClick={changeProject}>Show another project</span>
+          <Link to="/" className="btn">Back to Home</Link>
+        </div>
 
     </div>
   );

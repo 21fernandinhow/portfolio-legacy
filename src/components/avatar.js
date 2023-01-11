@@ -12,8 +12,8 @@ function Avatar() {
     <div className='avatar-section'>
         <img className='avatar' alt="avatar" src="../images/avatar.webp"/>
         <div className='icons'>
-          <a href="https://github.com/21fernandinhow"><img className='icon' alt="github" src="../images/github.webp"/></a>
-          <a href="https://www.linkedin.com/in/fernando-carvalho-6005b024b/"><img className='icon' alt="linkedin" src="../images/linkedin.webp"/></a>
+          <a href="https://github.com/21fernandinhow" target="_blank" rel="noopener noreferrer"><img className='icon' alt="github" src="../images/github.webp"/></a>
+          <a href="https://www.linkedin.com/in/fernando-carvalho-6005b024b/" target="_blank" rel="noopener noreferrer"><img className='icon' alt="linkedin" src="../images/linkedin.webp"/></a>
           <img onClick={changeTheme} className='btn-theme' alt="change-theme" src="../images/changetheme.webp"/>
         </div>
     </div>

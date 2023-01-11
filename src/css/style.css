@@ -1,3 +1,120 @@
+.avatar-section {
+  flex-direction: column;
+}
+.avatar-section .avatar {
+  width: 180px;
+  border-radius: 100%;
+  background: linear-gradient(270deg, #8a2be2, #ff0e54);
+  background-size: 1000% 1000%;
+  -webkit-animation: AnimationName 6s ease infinite;
+  -moz-animation: AnimationName 6s ease infinite;
+  animation: AnimationName 6s ease infinite;
+}
+.avatar-section .avatar:hover {
+  background: linear-gradient(270deg, #75d41d, #0eff0e);
+  background-size: 1000% 1000%;
+  -webkit-animation: AnimationName 6s ease infinite;
+  -moz-animation: AnimationName 6s ease infinite;
+  animation: AnimationName 6s ease infinite;
+  width: 200px;
+  transition: 0.6s;
+}
+.avatar-section .icons {
+  margin-top: 10px;
+}
+.avatar-section .icons .icon {
+  width: 25px;
+  margin-right: 5px;
+  filter: var(--invert);
+  border-radius: 10px;
+  padding: 4px;
+}
+.avatar-section .icons .btn-theme {
+  width: 90px;
+  cursor: pointer;
+}
+
+.content-section {
+  margin-left: 40px;
+  width: 100%;
+  min-height: 16rem;
+  display: flex;
+  align-items: center;
+}
+.content-section h1, .content-section h2 {
+  margin-top: 0px;
+}
+.content-section .btn {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 12px 24px;
+  margin-top: 12px;
+  margin-right: 8px;
+  border-radius: 18px;
+  text-decoration: none;
+}
+.content-section .btn:hover {
+  background-color: var(--secondary-color);
+  transition: 0.6s;
+  font-weight: bolder;
+}
+.content-section .menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+}
+.content-section .skills {
+  display: inline-flex;
+}
+.content-section .skills .skill-icon {
+  object-fit: contain;
+  width: 30px;
+  height: 30px;
+  margin-right: 2px;
+}
+.content-section .skills .skill-icon:hover {
+  width: 35px;
+  height: 35px;
+  transition: 0.4s;
+}
+.content-section .about-options {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content-section .portfolio-img {
+  max-width: 60%;
+  border-radius: 10px;
+}
+.content-section .portfolio-img:hover {
+  border: 2px groove var(--secondary-color);
+  transition: 0.6s;
+}
+.content-section .portfolio-name {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.content-section .portfolio-name:hover {
+  font-weight: bolder;
+}
+.content-section .contact {
+  width: 100%;
+}
+.content-section .contact .link-contact {
+  text-decoration: none;
+  color: var(--contrast-color);
+  font-weight: bolder;
+}
+.content-section .contact .link-contact:hover {
+  color: var(--primary-color);
+  transition: 0.6s;
+}
+.content-section .contact .link-contact .contact-icon {
+  width: 22px;
+  vertical-align: bottom;
+  display: inline-block;
+  margin-right: 7px;
+}
+
 :root {
   --primary-color: #8a2be2;
   --secondary-color: #75d41d;
@@ -8,7 +125,7 @@
   --invert: invert(100%);
 }
 
-.flex-central, .main-section .avatar-section .icons, .main-section .avatar-section, .main-section {
+.flex-central, .avatar-section, .avatar-section .icons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,108 +148,9 @@ body {
   border-radius: 20px;
   background-color: var(--bg-color);
   color: var(--contrast-color);
-  padding: 30px;
-  max-width: 640px;
-}
-.main-section .avatar-section {
-  flex-direction: column;
-}
-.main-section .avatar-section .avatar {
-  width: 180px;
-  border-radius: 100%;
-  background: linear-gradient(270deg, #8a2be2, #ff0e54);
-  background-size: 1000% 1000%;
-  -webkit-animation: AnimationName 6s ease infinite;
-  -moz-animation: AnimationName 6s ease infinite;
-  animation: AnimationName 6s ease infinite;
-}
-.main-section .avatar-section .avatar:hover {
-  background: linear-gradient(270deg, #75d41d, #0eff0e);
-  background-size: 1000% 1000%;
-  -webkit-animation: AnimationName 6s ease infinite;
-  -moz-animation: AnimationName 6s ease infinite;
-  animation: AnimationName 6s ease infinite;
-  width: 200px;
-  transition: 0.6s;
-}
-.main-section .avatar-section .icons {
-  margin-top: 10px;
-}
-.main-section .avatar-section .icons .icon {
-  width: 25px;
-  margin-right: 5px;
-  filter: var(--invert);
-  border-radius: 10px;
-  padding: 4px;
-}
-.main-section .avatar-section .icons .btn-theme {
-  width: 90px;
-  cursor: pointer;
-}
-.main-section .content-section {
-  margin-left: 40px;
-}
-.main-section .content-section .btn-back, .main-section .content-section .menu .btn-menu {
-  background-color: var(--primary-color);
-  color: #ffffff;
-  padding: 12px 24px;
-  margin-top: 12px;
-  margin-right: 8px;
-  border-radius: 18px;
-  text-decoration: none;
-}
-.main-section .content-section .btn-back:hover, .main-section .content-section .menu .btn-menu:hover {
-  background-color: var(--secondary-color);
-  transition: 0.6s;
-  font-weight: bolder;
-}
-.main-section .content-section .menu {
+  padding: 15px 30px;
   display: flex;
-  flex-wrap: wrap;
-}
-.main-section .content-section .skills {
-  display: inline-flex;
-}
-.main-section .content-section .skills .skill-icon {
-  object-fit: contain;
-  width: 30px;
-  height: 30px;
-  margin-right: 2px;
-}
-.main-section .content-section .skills .skill-icon:hover {
-  width: 35px;
-  height: 35px;
-  transition: 0.4s;
-}
-.main-section .content-section .about-options {
-  display: flex;
-  flex-wrap: wrap;
-}
-.main-section .content-section .portfolio-img {
-  max-width: 80%;
-  border-radius: 10px;
-}
-.main-section .content-section .portfolio-img:hover {
-  border: 2px groove var(--secondary-color);
-  transition: 0.6s;
-}
-.main-section .content-section .portfolio-name:hover {
-  font-weight: bolder;
-}
-.main-section .content-section .link-contact {
-  text-decoration: none;
-  color: var(--contrast-color);
-  font-weight: bolder;
-}
-.main-section .content-section .link-contact:hover {
-  color: var(--primary-color);
-  transition: 0.6s;
-}
-.main-section .content-section .link-contact .contact-icon {
-  width: 22px;
-  vertical-align: bottom;
-  display: inline-block;
-  margin-right: 7px;
+  width: 640px;
 }
 
 @media (max-width: 720px) {
@@ -143,10 +161,25 @@ body {
   body .main-section {
     flex-wrap: wrap;
     margin: 20px;
-    min-height: 80vh;
+    width: 75vw;
+    flex-direction: column;
+    padding: 20px;
   }
-  body .main-section .portfolio-img {
-    min-width: 180px;
+  body .main-section .avatar-section {
+    width: 100%;
+  }
+  body .main-section .content-section {
+    margin-left: 0px;
+    margin-top: 0.9rem;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 22rem;
+  }
+  body .main-section .content-section .home, body .main-section .content-section .about, body .main-section .content-section .portfolio, body .main-section .content-section .contact {
+    height: 100%;
+  }
+  body .main-section .content-section .portfolio-img {
+    max-width: 100%;
   }
 }
 @-webkit-keyframes AnimationName {

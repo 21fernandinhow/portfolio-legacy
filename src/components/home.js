@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div data-aos="flip-down" data-aos-duration="2000">
+    <div data-aos="flip-down" data-aos-duration="2000" className="home">
         <h1>Hi, I am Fernando Carvalho!</h1>
         <h2>Front-end Developer</h2>
         <div className="skills">
@@ -15,9 +15,9 @@ function Home() {
           <img className="skill-icon" alt="reactjs" src="../images/react.webp"/>
         </div>
         <div className="menu">
-          <Link to="/about" className="btn-menu">About</Link>
-          <Link to="/portfolio" className="btn-menu">Portfolio</Link>
-          <Link to="/contact" className="btn-menu">Contact</Link>
+          <Link to="/about" className="btn">About</Link>
+          <Link to="/portfolio" className="btn">Portfolio</Link>
+          <Link to="/contact" className="btn">Contact</Link>
         </div>
     </div>
   );

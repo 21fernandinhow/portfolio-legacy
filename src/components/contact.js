@@ -5,17 +5,17 @@ import '../images/email.webp';
 
 function Contact() {
   return (
-    <div data-aos="fade-in" data-aos-duration="2000">
-        <h2>Get in touch!</h2>
+    <div data-aos="fade-in" data-aos-duration="2000" className="contact">
+        <h2>Get in touch</h2>
         <p>Let's talk about your project</p>
 
-        <p><a className="link-contact" href="https://api.whatsapp.com/send/?phone=5532988407783&text&type=phone_number&app_absent=0">
+        <p><a className="link-contact" href="https://api.whatsapp.com/send/?phone=5532988407783&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
           <img alt="whatsapp" className="contact-icon" src="../images/wpp.webp"/> Whatsapp </a></p>
 
-          <p><a className="link-contact" href="mailto:21fernandinhow@gmail.com"> 
+          <p><a className="link-contact" href="mailto:21fernandinhow@gmail.com" target="_blank" rel="noopener noreferrer"> 
             <img alt="email" className="contact-icon" src="../images/email.webp"/> 21fernandinhow@gmail.com </a></p>
         <br/>
-        <Link to="/" className="btn-back">Back to Home</Link>
+        <Link to="/" className="btn">Back to Home</Link>
     </div>
   );
 };
