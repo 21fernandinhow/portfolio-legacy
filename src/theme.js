@@ -21,3 +21,5 @@ function changeTheme(){
         body.dataset.theme = "dark"
       }
 }
+
+export default changeTheme;
