@@ -7,9 +7,9 @@
     --primary-color: #8a2be2;
     --secondary-color: #75d41d;
     --contrast-color: #f5f5f5;
-    --bg-color: #292b2c;
+    --bg-color: #000015;
     --bg-radical-color: #000000;
-    --bg-image: url("../images/bg-home-dark.webp");
+    --bg-image: url("https://cdn.dribbble.com/users/1260392/screenshots/3087645/blue_sky_pixel_animation.gif");
     --invert: invert(100%);
 }
 
@@ -40,34 +40,48 @@ body{
     padding: 15px 30px;
     display: flex;
     width: 640px;
+    animation: float 5s ease-in-out infinite;
+}
+#song-button{
+    font-size: 0.8em;
+    padding: 0.4em;
+    background-color: #f5f5f5;
+    border-radius: 100%;
+    border: none;
+    position: fixed;
+    top: 7px;
+    left: 7px;
 }
     
 //Responsivity
 @media (max-width:720px){
-    body{
-        background-size: contain;
-        background-repeat: repeat;
-        .main-section{
-            flex-wrap: wrap;
-            margin: 20px;
-            width: 75vw;
-            flex-direction: column;
-            padding: 20px;
-            .avatar-section{
-                width: 100%;
+    #song-button{
+        position: fixed;
+        top: 4px;
+        left: 4px;
+        font-size: 0.7em;
+    }
+    .main-section{
+        flex-wrap: wrap;
+        margin: 20px;
+        width: 75vw;
+        flex-direction: column;
+        padding: 20px;
+        .avatar-section{
+            width: 100%;
+        }
+        .content-section{
+            margin-left: 0px;
+            margin-top: 0.9rem;
+            justify-content: center;
+            align-items: stretch;
+            min-height: 22rem;
+            .home, .about, .portfolio, .contact{
+                height: 100%;
+                margin-left: 0.8rem;
             }
-            .content-section{
-                margin-left: 0px;
-                margin-top: 0.9rem;
-                justify-content: center;
-                align-items: stretch;
-                min-height: 22rem;
-                .home, .about, .portfolio, .contact{
-                    height: 100%;
-                }
-                .portfolio-img{
-                    max-width: 100%;
-                }
+            .portfolio-img{
+                max-width: 100%;
             }
         }
     }
@@ -88,4 +102,15 @@ body{
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
+}
+@keyframes float{
+    0%{
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(12px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
 }

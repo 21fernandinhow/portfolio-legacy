@@ -10,7 +10,7 @@ function About() {
           <br/><br/>Today, I'd like to make a website for you. Let's go?
         </p>
         
-        <div className="about-options">
+        <div className="menu">
           <Link to="/contact" className="btn">Get in touch</Link>
           <Link to="/" className="btn">Back to Home</Link>
         </div>
