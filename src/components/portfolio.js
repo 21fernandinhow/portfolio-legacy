@@ -20,10 +20,10 @@ function Portfolio() {
     image: "../images/site4.webp",
     link: "https://symphonious-mousse-89fa53.netlify.app/"},
     {name: "5. Tic Tac Toe with Themes",
-    image: "../images/site4.webp",
+    image: "../images/site5.webp",
     link: "https://quiet-lebkuchen-7bce28.netlify.app/"},
     {name: "6. Memory Game on ReactJs",
-    image: "../images/site5.webp",
+    image: "../images/site6.webp",
     link: "https://starlit-peony-8c02ec.netlify.app/"}
   ]
 
