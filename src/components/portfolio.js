@@ -16,10 +16,13 @@ function Portfolio() {
     {name: "3. Chill Drinks Website",
     image: "../images/site3.webp",
     link: "https://chilldrinks.com.br/"},
-    {name: "4. Tic Tac Toe with Themes",
+    {name: "4. Wheater Application with API",
+    image: "../images/site4.webp",
+    link: "https://symphonious-mousse-89fa53.netlify.app/"},
+    {name: "5. Tic Tac Toe with Themes",
     image: "../images/site4.webp",
     link: "https://quiet-lebkuchen-7bce28.netlify.app/"},
-    {name: "5. Memory Game on ReactJs",
+    {name: "6. Memory Game on ReactJs",
     image: "../images/site5.webp",
     link: "https://starlit-peony-8c02ec.netlify.app/"}
   ]
