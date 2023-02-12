@@ -81,20 +81,36 @@
   display: flex;
   flex-wrap: wrap;
 }
-.content-section .portfolio-img {
-  max-width: 60%;
+.content-section .carrousel {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  max-width: 70%;
+}
+.content-section .carrousel .arrow-div {
+  margin-top: -24px;
+  font-size: 24px;
+  color: var(--primary-color);
+  opacity: 0.6;
+  cursor: pointer;
+  padding: 4px;
+}
+.content-section .carrousel .arrow-div:hover {
+  opacity: 1;
+}
+.content-section .carrousel .portfolio-div .portfolio-img {
+  max-width: 100%;
   border-radius: 10px;
+  opacity: 0.9;
 }
-.content-section .portfolio-img:hover {
-  border: 2px groove var(--secondary-color);
-  transition: 0.6s;
+.content-section .carrousel .portfolio-div .portfolio-img:hover {
+  opacity: 1;
+  transition: 0.4s;
 }
-.content-section .portfolio-name {
-  margin-top: 5px;
-  margin-bottom: 0px;
-}
-.content-section .portfolio-name:hover {
-  font-weight: bolder;
+.content-section .carrousel .portfolio-div .portfolio-name {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 15px;
 }
 .content-section .contact {
   width: 100%;
@@ -125,7 +141,7 @@
   --invert: invert(100%);
 }
 
-.flex-central, .avatar-section, .avatar-section .icons {
+.flex-central, .avatar-section, .avatar-section .icons, .content-section .carrousel .arrow-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,8 +209,11 @@ body {
     height: 100%;
     margin-left: 0.8rem;
   }
-  .main-section .content-section .portfolio-img {
+  .main-section .content-section .carrousel {
     max-width: 100%;
+  }
+  .main-section .content-section .carrousel .portfolio-name {
+    font-size: 14px;
   }
 }
 @-webkit-keyframes AnimationName {

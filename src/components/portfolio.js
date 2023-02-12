@@ -7,27 +7,27 @@ function Portfolio() {
   let [project, setProject] = useState(0);
 
   const projects = [
-    {name: "1. ClassPlay Landing Page",
+    {name: "ClassPlay Landing Page",
     image: "../images/site1.webp",
     link: "https://rococo-treacle-97e956.netlify.app/"},
-    {name: "2. Kathellyn Lima Website",
+    {name: "Kathellyn Lima Website",
     image: "../images/site2.webp",
     link: "http://kathellynlima.com.br/"},
-    {name: "3. Chill Drinks Website",
+    {name: "Chill Drinks Website",
     image: "../images/site3.webp",
     link: "https://chilldrinks.com.br/"},
-    {name: "4. Wheater Application with API",
+    {name: "Wheater with API",
     image: "../images/site4.webp",
     link: "https://symphonious-mousse-89fa53.netlify.app/"},
-    {name: "5. Tic Tac Toe with Themes",
+    {name: "TicTacToe with Themes",
     image: "../images/site5.webp",
     link: "https://quiet-lebkuchen-7bce28.netlify.app/"},
-    {name: "6. Memory Game on ReactJs",
+    {name: "ReactJs MemoryGame",
     image: "../images/site6.webp",
     link: "https://starlit-peony-8c02ec.netlify.app/"}
   ]
 
-  const changeProject = () => {
+  const nextProject = () => {
     if(project < projects.length-1 ){
       setProject(project=project+1);
     } else {
@@ -35,14 +35,29 @@ function Portfolio() {
     };
   }
 
+  const lastProject = () => {
+    if(project !== 0 ){
+      setProject(project=project-1);
+    } else if (project === 0){
+      setProject(project=projects.length-1);
+    };
+  }
+
   return (
     <div data-aos="fade-in" data-aos-duration="2000" className="portfolio">
         <h2>Portfolio</h2>
 
-        <Item name={projects[project].name} image={projects[project].image} link={projects[project].link}/>
+        <div className="carrousel">
+          <div className="arrow-div" onClick={lastProject}>
+            <span>{`<`}</span>
+          </div>
+          <Item name={projects[project].name} image={projects[project].image} link={projects[project].link} id={project+1} total={projects.length}/>
+          <div className="arrow-div" onClick={nextProject}>
+            <span>{`>`}</span>
+          </div>
+        </div>
 
         <div className="menu">
-          <span className="btn" onClick={changeProject}>Show another project</span>
           <Link to="/" className="btn">Back to Home</Link>
         </div>
 

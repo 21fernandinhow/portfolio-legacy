@@ -80,8 +80,11 @@ body{
                 height: 100%;
                 margin-left: 0.8rem;
             }
-            .portfolio-img{
+            .carrousel{
                 max-width: 100%;
+                .portfolio-name{
+                    font-size: 14px;
+                }
             }
         }
     }

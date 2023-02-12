@@ -52,19 +52,38 @@
     }
 
     //Portfolio Page
-    .portfolio-img{
-        max-width: 60%;
-        border-radius: 10px;
-        &:hover{
-            border: 2px groove var(--secondary-color);
-            transition: 0.6s;
+    .carrousel{
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        max-width: 70%;
+        .arrow-div{
+            @extend .flex-central;
+            margin-top: -24px;
+            font-size: 24px;
+            color: var(--primary-color);
+            opacity: 0.6;
+            cursor: pointer;
+            padding: 4px;
+            &:hover{
+                opacity: 1;
+            }
         }
-    }
-    .portfolio-name{
-        margin-top: 5px;
-        margin-bottom: 0px;
-        &:hover{
-            font-weight: bolder;
+        .portfolio-div{
+            .portfolio-img{
+                max-width: 100%;
+                border-radius: 10px;
+                opacity: 0.9;
+                &:hover{
+                    opacity: 1;
+                    transition: 0.4s;
+                }
+            }
+            .portfolio-name{
+                margin-top: 0px;
+                margin-bottom: 5px;
+                font-size: 15px;
+            }
         }
     }
 

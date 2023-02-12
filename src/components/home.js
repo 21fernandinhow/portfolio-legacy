@@ -15,7 +15,7 @@ function Home() {
           <img className="skill-icon" alt="reactjs" src="../images/react.webp"/>
         </div>
         <div className="menu">
-          <Link to="/about" className="btn">About Me</Link>
+          <Link to="/about" className="btn">About</Link>
           <Link to="/portfolio" className="btn">Portfolio</Link>
           <Link to="/contact" className="btn">Contact</Link>
         </div>
