@@ -1,4 +1,57 @@
-//Portfolio Page
+.content-section{
+    margin-left: 40px;
+    width: 100%;
+    min-height: 16rem;
+    display: flex;
+    align-items: center;
+
+    //Common Elements
+    h1, h2{
+        margin-top: 0px;
+    }
+    .btn{
+        background-color: var(--primary-color);
+        color: #ffffff;
+        padding: 12px 24px;
+        margin-top: 12px;
+        margin-right: 8px;
+        border-radius: 18px;
+        text-decoration: none;
+        &:hover{
+            background-color: var(--secondary-color);
+            transition: 0.6s;
+            font-weight: bolder;
+        }
+    }
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+    }
+
+    //Home Page
+    .skills{
+        display: inline-flex;
+        .skill-icon{
+            object-fit: contain;
+            width: 30px;
+            height: 30px;
+            margin-right: 2px;
+            &:hover{
+                width: 35px;
+                height: 35px;
+                transition: 0.4s;
+            }
+        }
+    }
+
+    //About Page
+    .about-options{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    //Portfolio Page
     .portfolio-img{
         max-width: 60%;
         border-radius: 10px;

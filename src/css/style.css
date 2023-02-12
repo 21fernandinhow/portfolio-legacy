@@ -77,6 +77,10 @@
   height: 35px;
   transition: 0.4s;
 }
+.content-section .about-options {
+  display: flex;
+  flex-wrap: wrap;
+}
 .content-section .portfolio-img {
   max-width: 60%;
   border-radius: 10px;
@@ -239,4 +243,3 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
-
