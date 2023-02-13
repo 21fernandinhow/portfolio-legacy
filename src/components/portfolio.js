@@ -48,11 +48,11 @@ function Portfolio() {
         <h2>Portfolio</h2>
 
         <div className="carrousel">
-          <div className="arrow-div" onClick={lastProject}>
+          <div className="arrow-div arrow1" onClick={lastProject}>
             <span>{`<`}</span>
           </div>
           <Item name={projects[project].name} image={projects[project].image} link={projects[project].link} id={project+1} total={projects.length}/>
-          <div className="arrow-div" onClick={nextProject}>
+          <div className="arrow-div arrow2" onClick={nextProject}>
             <span>{`>`}</span>
           </div>
         </div>

@@ -54,6 +54,7 @@
     //Portfolio Page
     .carrousel{
         display: flex;
+        justify-content: stretch;
         align-items: center;
         flex-wrap: nowrap;
         max-width: 70%;
@@ -61,17 +62,25 @@
             @extend .flex-central;
             margin-top: -24px;
             font-size: 24px;
-            color: var(--primary-color);
-            opacity: 0.6;
+            color: var(--contrast-color);
+            opacity: 0.8;
             cursor: pointer;
-            padding: 4px;
             &:hover{
                 opacity: 1;
             }
         }
+        .arrow1{
+            transform: translateX(-15px);
+        }
+        .arrow2{
+            transform: translateX(10px);
+        }
         .portfolio-div{
+            transform: translateX(-3%);
+            @extend .flex-central;
+            flex-direction: column;
             .portfolio-img{
-                max-width: 100%;
+                max-width: 105%;
                 border-radius: 10px;
                 opacity: 0.9;
                 &:hover{
@@ -83,6 +92,7 @@
                 margin-top: 0px;
                 margin-bottom: 5px;
                 font-size: 15px;
+                text-align: center;
             }
         }
     }
