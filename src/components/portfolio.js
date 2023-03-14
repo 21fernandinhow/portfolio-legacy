@@ -7,24 +7,30 @@ function Portfolio() {
   let [project, setProject] = useState(0);
 
   const projects = [
+    {name: "Digital Marketing Agency",
+    image: "../images/apo.webp",
+    link: "https://agenciapresencaonline.com.br"},
     {name: "ClassPlay Landing Page",
-    image: "../images/site1.webp",
-    link: "https://rococo-treacle-97e956.netlify.app/"},
+    image: "../images/classplay.webp",
+    link: "https://classplay.netlify.app/"},
+    {name: "Weather with API",
+    image: "../images/weather.webp",
+    link: "https://checkingtheweather.netlify.app/"},
+    {name: "Days to World Cup",
+    image: "../images/worldcup.webp",
+    link: "https://quantofaltapracopa.netlify.app/"},
+    {name: "ReactJs MemoryGame",
+    image: "../images/memorygame.webp",
+    link: "https://starlit-peony-8c02ec.netlify.app/"},
+    {name: "TicTacToe with Themes",
+    image: "../images/tictactoe.webp",
+    link: "https://quiet-lebkuchen-7bce28.netlify.app/"},
     {name: "Kathellyn Lima Website",
-    image: "../images/site2.webp",
+    image: "../images/kathellyn.webp",
     link: "http://kathellynlima.com.br/"},
     {name: "Chill Drinks Website",
-    image: "../images/site3.webp",
+    image: "../images/chilldrinks.webp",
     link: "https://chilldrinks.com.br/"},
-    {name: "Wheater with API",
-    image: "../images/site4.webp",
-    link: "https://symphonious-mousse-89fa53.netlify.app/"},
-    {name: "TicTacToe with Themes",
-    image: "../images/site5.webp",
-    link: "https://quiet-lebkuchen-7bce28.netlify.app/"},
-    {name: "ReactJs MemoryGame",
-    image: "../images/site6.webp",
-    link: "https://starlit-peony-8c02ec.netlify.app/"}
   ]
 
   const nextProject = () => {
