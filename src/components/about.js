@@ -5,9 +5,9 @@ function About() {
   return (
     <div data-aos="fade-in" data-aos-duration="2000" className="about">
         <h2>About Me</h2>
-        <p>I'm a Front End Developer from Brazil with a long enterpreunership story. 
-          I already created some e-commerces, landing pages and even a startup. 
-          <br/><br/>Today, I'd like to make a website for you. Let's go?
+        <p>I'm a brazilian Front End Developer that creates awesome experiences, using 
+          my main tool: criativity. With a long enterpreunership story, I already made 
+          business websites, landing pages and even an startup.
         </p>
         
         <div className="menu">
