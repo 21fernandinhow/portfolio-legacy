@@ -87,8 +87,13 @@ body{
                 height: 100%;
                 margin-left: 0.8rem;
             }
-            .link-contact{
-                font-size: 14px;
+            .contact{
+                #email, #name{
+                    width: 100%;
+                }
+                #message{
+                    margin: 5px;
+                }
             }
             .carrousel{
                 max-width: 100%;

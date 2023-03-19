@@ -9,13 +9,18 @@ function Contact() {
         <h2>Get in touch</h2>
         <p>Let's talk about your project</p>
 
-        <p><a className="link-contact" href="https://api.whatsapp.com/send/?phone=5532988407783&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
-          <img alt="whatsapp" className="contact-icon" src="../images/wpp.webp"/> Whatsapp </a></p>
+        <form action="https://formsubmit.co/21fernandinhow@gmail.com" method="POST">
 
-          <p><a className="link-contact" href="mailto:21fernandinhow@gmail.com" target="_blank" rel="noopener noreferrer"> 
-            <img alt="email" className="contact-icon" src="../images/email.webp"/> 21fernandinhow@gmail.com </a></p>
-        <br/>
-        <Link to="/" className="btn">Back to Home</Link>
+          <input type="text" name="name" id="name" placeholder="Name"/>
+
+          <input type="email" name="email" id="email" placeholder="E-mail"/>
+
+          <textarea id="message" name="message" rows="2" placeholder="Message"/>
+
+          <button type="submit" className="btn">Send Message</button>
+          <Link to="/" className="btn">Back to Home</Link>
+
+        </form>
     </div>
   );
 };
