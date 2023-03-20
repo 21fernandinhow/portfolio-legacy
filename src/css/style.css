@@ -49,7 +49,7 @@
   border: none;
   font-size: 14px;
   color: #ffffff;
-  padding: 12px 24px;
+  padding: 10px 20px;
   margin-top: 12px;
   margin-right: 8px;
   border-radius: 18px;
@@ -138,13 +138,13 @@
 .content-section .contact form #name, .content-section .contact form #email, .content-section .contact form #message {
   background: none;
   border: none;
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
   color: var(--contrast-color);
 }
 .content-section .contact form #name:focus, .content-section .contact form #email:focus, .content-section .contact form #message:focus {
   box-shadow: 0 0 0 0;
   border: 0 none;
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
   outline: 0;
 }
 .content-section .contact form #name, .content-section .contact form #email {
@@ -159,11 +159,11 @@
 :root {
   --primary-color: #8a2be2;
   --secondary-color: #75d41d;
-  --contrast-color: #f5f5f5;
-  --bg-color: #000015;
-  --bg-radical-color: #000000;
-  --bg-image: url("https://cdn.dribbble.com/users/1260392/screenshots/3087645/blue_sky_pixel_animation.gif");
-  --invert: invert(100%);
+  --contrast-color: #000015;
+  --bg-color: #f5f5f5;
+  --bg-radical-color: #ffffff;
+  --bg-image: url("../images/bg-home-light.webp");
+  --invert: invert(0%);
 }
 
 .flex-central, .avatar-section, .avatar-section .icons, .content-section .carrousel .arrow-div, .content-section .carrousel .portfolio-div, .content-section .contact form {

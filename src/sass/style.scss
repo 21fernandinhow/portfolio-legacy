@@ -6,11 +6,11 @@
 :root{
     --primary-color: #8a2be2;
     --secondary-color: #75d41d;
-    --contrast-color: #f5f5f5;
-    --bg-color: #000015;
-    --bg-radical-color: #000000;
-    --bg-image: url("https://cdn.dribbble.com/users/1260392/screenshots/3087645/blue_sky_pixel_animation.gif");
-    --invert: invert(100%);
+    --contrast-color: #000015;
+    --bg-color: #f5f5f5;
+    --bg-radical-color: #ffffff;
+    --bg-image: url("../images/bg-home-light.webp");
+    --invert: invert(0%);
 }
 
 //Extends

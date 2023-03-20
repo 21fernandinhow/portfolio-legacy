@@ -14,7 +14,7 @@
         border: none;
         font-size: 14px;
         color: #ffffff;
-        padding: 12px 24px;
+        padding: 10px 20px;
         margin-top: 12px;
         margin-right: 8px;
         border-radius: 18px;
@@ -112,12 +112,12 @@
             #name, #email, #message{
                 background: none;
                 border: none;
-                border-bottom: 1px solid var(--primary-color);
+                border-bottom: 2px solid var(--primary-color);
                 color: var(--contrast-color);
                 &:focus{
                     box-shadow: 0 0 0 0;
                     border: 0 none;
-                    border-bottom: 1px solid var(--primary-color);
+                    border-bottom: 2px solid var(--primary-color);
                     outline: 0;
                 }
             }
