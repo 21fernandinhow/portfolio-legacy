@@ -185,6 +185,11 @@ body {
   min-height: 100vh;
 }
 
+::selection {
+  background-color: var(--primary-color);
+  color: var(--contrast-color);
+}
+
 .main-section {
   border-radius: 20px;
   background-color: var(--bg-color);
