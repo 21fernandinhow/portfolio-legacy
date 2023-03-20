@@ -3,7 +3,7 @@
     flex-direction: column;
 
     .avatar{
-        width: 180px;
+        width: 160px;
         border-radius: 100%;
         background: linear-gradient(270deg, #8a2be2, #ff0e54);
         background-size: 1000% 1000%;
@@ -20,7 +20,7 @@
             -moz-animation: AnimationName 6s ease infinite;
             animation: AnimationName 6s ease infinite;
 
-            width: 200px;
+            width: 180px;
             transition: 0.6s;
         }
     }

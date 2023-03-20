@@ -2,7 +2,7 @@
   flex-direction: column;
 }
 .avatar-section .avatar {
-  width: 180px;
+  width: 160px;
   border-radius: 100%;
   background: linear-gradient(270deg, #8a2be2, #ff0e54);
   background-size: 1000% 1000%;
@@ -16,7 +16,7 @@
   -webkit-animation: AnimationName 6s ease infinite;
   -moz-animation: AnimationName 6s ease infinite;
   animation: AnimationName 6s ease infinite;
-  width: 200px;
+  width: 180px;
   transition: 0.6s;
 }
 .avatar-section .icons {
@@ -191,7 +191,7 @@ body {
 }
 
 .main-section {
-  border-radius: 20px;
+  border-radius: 40px;
   background-color: var(--bg-color);
   color: var(--contrast-color);
   padding: 15px 30px;
