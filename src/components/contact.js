@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '../images/wpp.webp';
-import '../images/email.webp';
 
 function Contact() {
   return (

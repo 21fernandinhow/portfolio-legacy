@@ -4,12 +4,11 @@
 
 //Theme
 :root{
-    --primary-color: #8a2be2;
-    --secondary-color: #75d41d;
+    --primary-color: #7868E6;
+    --secondary-color: #B8B5FF;
     --contrast-color: #000015;
     --bg-color: #f5f5f5;
     --bg-radical-color: #ffffff;
-    --bg-image: url("../images/bg-home-light.webp");
     --invert: invert(0%);
 }
 
@@ -22,16 +21,17 @@
 
 //Body and My Section Settings
 body{
-    background-color: var(--bg-radical-color);
-    background-image: var(--bg-image);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
+    background: linear-gradient(270deg, var(--bg-color), var(--primary-color));
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 6s ease infinite;
+    -moz-animation: AnimationName 6s ease infinite;
+    animation: AnimationName 6s ease infinite;
 }
 ::selection{
     background-color: var(--primary-color);
@@ -39,17 +39,19 @@ body{
 }
 .main-section{
     border-radius: 40px;
-    background-color: var(--bg-color);
+    background-color: var(--bg-radical-color);
     color: var(--contrast-color);
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
     padding: 15px 30px;
     display: flex;
     width: 640px;
     animation: float 5s ease-in-out infinite;
 }
 #song-button{
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 0.4em;
-    background-color: #f5f5f5;
+    background-color: var(--bg-radical-color);
+    filter: grayscale(40%);
     border-radius: 100%;
     border: none;
     position: fixed;

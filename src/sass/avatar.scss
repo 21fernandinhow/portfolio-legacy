@@ -1,26 +1,13 @@
 .avatar-section{
     @extend .flex-central;
     flex-direction: column;
-
     .avatar{
-        width: 160px;
         border-radius: 100%;
-        background: linear-gradient(270deg, #8a2be2, #ff0e54);
-        background-size: 1000% 1000%;
-
-        -webkit-animation: AnimationName 6s ease infinite;
-        -moz-animation: AnimationName 6s ease infinite;
-        animation: AnimationName 6s ease infinite;
-
+        border: 3px solid var(--primary-color);
+        background-color: var(--secondary-color);
         &:hover{
-            background: linear-gradient(270deg, #75d41d, #0eff0e);
-            background-size: 1000% 1000%;
-
-            -webkit-animation: AnimationName 6s ease infinite;
-            -moz-animation: AnimationName 6s ease infinite;
-            animation: AnimationName 6s ease infinite;
-
             width: 180px;
+            height: 180px;
             transition: 0.6s;
         }
     }
@@ -28,15 +15,14 @@
         @extend .flex-central;
         margin-top: 10px;
         .icon{
-            width: 25px;
             margin-right: 5px;
             filter: var(--invert);
             border-radius: 10px;
             padding: 4px;
         }
         .btn-theme{
-            width: 90px;
             cursor: pointer;
+            filter: grayscale(100%);
         }
     }
 }

@@ -2,36 +2,27 @@
   flex-direction: column;
 }
 .avatar-section .avatar {
-  width: 160px;
   border-radius: 100%;
-  background: linear-gradient(270deg, #8a2be2, #ff0e54);
-  background-size: 1000% 1000%;
-  -webkit-animation: AnimationName 6s ease infinite;
-  -moz-animation: AnimationName 6s ease infinite;
-  animation: AnimationName 6s ease infinite;
+  border: 3px solid var(--primary-color);
+  background-color: var(--secondary-color);
 }
 .avatar-section .avatar:hover {
-  background: linear-gradient(270deg, #75d41d, #0eff0e);
-  background-size: 1000% 1000%;
-  -webkit-animation: AnimationName 6s ease infinite;
-  -moz-animation: AnimationName 6s ease infinite;
-  animation: AnimationName 6s ease infinite;
   width: 180px;
+  height: 180px;
   transition: 0.6s;
 }
 .avatar-section .icons {
   margin-top: 10px;
 }
 .avatar-section .icons .icon {
-  width: 25px;
   margin-right: 5px;
   filter: var(--invert);
   border-radius: 10px;
   padding: 4px;
 }
 .avatar-section .icons .btn-theme {
-  width: 90px;
   cursor: pointer;
+  filter: grayscale(100%);
 }
 
 .content-section {
@@ -48,7 +39,8 @@
   background-color: var(--primary-color);
   border: none;
   font-size: 14px;
-  color: #ffffff;
+  color: #fff;
+  font-weight: bolder;
   padding: 10px 20px;
   margin-top: 12px;
   margin-right: 8px;
@@ -58,7 +50,6 @@
 .content-section .btn:hover {
   background-color: var(--secondary-color);
   transition: 0.6s;
-  font-weight: bolder;
 }
 .content-section .menu {
   display: flex;
@@ -157,12 +148,11 @@
 }
 
 :root {
-  --primary-color: #8a2be2;
-  --secondary-color: #75d41d;
+  --primary-color: #7868E6;
+  --secondary-color: #B8B5FF;
   --contrast-color: #000015;
   --bg-color: #f5f5f5;
   --bg-radical-color: #ffffff;
-  --bg-image: url("../images/bg-home-light.webp");
   --invert: invert(0%);
 }
 
@@ -173,16 +163,16 @@
 }
 
 body {
-  background-color: var(--bg-radical-color);
-  background-image: var(--bg-image);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+  background: linear-gradient(270deg, var(--bg-color), var(--primary-color));
+  background-size: 1000% 1000%;
+  -webkit-animation: AnimationName 6s ease infinite;
+  -moz-animation: AnimationName 6s ease infinite;
+  animation: AnimationName 6s ease infinite;
 }
 
 ::selection {
@@ -192,8 +182,9 @@ body {
 
 .main-section {
   border-radius: 40px;
-  background-color: var(--bg-color);
+  background-color: var(--bg-radical-color);
   color: var(--contrast-color);
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
   padding: 15px 30px;
   display: flex;
   width: 640px;
@@ -201,9 +192,10 @@ body {
 }
 
 #song-button {
-  font-size: 0.8em;
+  font-size: 1em;
   padding: 0.4em;
-  background-color: #f5f5f5;
+  background-color: var(--bg-radical-color);
+  filter: grayscale(40%);
   border-radius: 100%;
   border: none;
   position: fixed;
