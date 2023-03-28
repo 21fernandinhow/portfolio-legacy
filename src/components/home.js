@@ -7,12 +7,12 @@ function Home() {
         <h1>Hi, I am Fernando Carvalho!</h1>
         <h2>Front-end Developer</h2>
         <div className="skills">
-          <img className="skill-icon" alt="html" src="../images/html.webp"/>
-          <img className="skill-icon" alt="css" src="../images/css.webp"/>
-          <img className="skill-icon" alt="javascript" src="../images/js.webp"/>
-          <img className="skill-icon" alt="bootstrap" src="../images/bootstrap.webp"/>
-          <img className="skill-icon" alt="sass/scss" src="../images/sass.webp"/>
-          <img className="skill-icon" alt="reactjs" src="../images/react.webp"/>
+          <img className="skill-icon" alt="html" src="../images/html.webp" width={'30px'} height={'30px'}/>
+          <img className="skill-icon" alt="css" src="../images/css.webp" width={'30px'} height={'30px'}/>
+          <img className="skill-icon" alt="javascript" src="../images/js.webp" width={'30px'} height={'30px'}/>
+          <img className="skill-icon" alt="bootstrap" src="../images/bootstrap.webp" width={'30px'} height={'30px'}/>
+          <img className="skill-icon" alt="sass/scss" src="../images/sass.webp" width={'30px'} height={'30px'}/>
+          <img className="skill-icon" alt="reactjs" src="../images/react.webp" width={'30px'} height={'30px'}/>
         </div>
         <div className="menu">
           <Link to="/about" className="btn">About</Link>

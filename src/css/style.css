@@ -61,8 +61,6 @@
 }
 .content-section .skills .skill-icon {
   object-fit: contain;
-  width: 30px;
-  height: 30px;
   margin-right: 2px;
 }
 .content-section .skills .skill-icon:hover {
