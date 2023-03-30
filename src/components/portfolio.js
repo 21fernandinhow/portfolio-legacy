@@ -18,7 +18,7 @@ function Portfolio() {
     link: "https://quantofaltapracopa.netlify.app/"},
     {name: "ReactJs MemoryGame",
     image: "../images/memorygame.webp",
-    link: "https://starlit-peony-8c02ec.netlify.app/"},
+    link: "https://forestmemorygame.netlify.app/"},
     {name: "TicTacToe with Themes",
     image: "../images/tictactoe.webp",
     link: "https://quiet-lebkuchen-7bce28.netlify.app/"},
