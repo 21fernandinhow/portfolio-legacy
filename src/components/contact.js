@@ -5,7 +5,7 @@ function Contact() {
   return (
     <div data-aos="fade-in" data-aos-duration="2000" className="contact">
         <h2>Get in touch</h2>
-        <p>Let's talk about your project</p>
+        <p>Let's talk about your project.</p>
 
         <form action="https://formsubmit.co/21fernandinhow@gmail.com" method="POST">
 
